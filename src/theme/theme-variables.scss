@@ -1,0 +1,84 @@
+/*
+ * Application global variables.
+ */
+
+// Set Font Awesome font path
+$fa-font-path: "~font-awesome/fonts";
+
+// ---------------------------------------------------------------------------
+// Bootstrap variables
+//
+// Override Bootstrap variables here to suite your theme.
+// Copy variables you want to customize from node_modules/bootstrap/scss/_variables.scss
+
+//
+//  Metrics
+//
+$pad20: 20px;
+$pad10: 10px;
+$pad5: 5px;
+
+//
+// Color system
+//
+$white:  #fcfcfc;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #868e96;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:  #191919;
+
+$blue:    #2B4C7E;
+$indigo:  #6610f2;
+$purple:  #6f42c1;
+$pink:    #e83e8c;
+$red:     #FF4500;
+$orange:  #fd7e14;
+$yellow:  #ffc107;
+$green:   #4CA64C;
+$teal:    #20c997;
+$cyan:    #7F9FBF;
+
+$theme-colors: (
+  primary: $blue,
+  secondary: $gray-600,
+  success: $green,
+  info: $cyan,
+  warning: $yellow,
+  danger: $red,
+  light: $gray-100,
+  dark: $gray-800
+);
+
+//
+// Charts / Maps
+//
+/* chart palette 1 */
+$chart-a1: #11644D;
+$chart-a2: #A0B046;
+$chart-a3: #F2C94E;
+$chart-a4: #F78145;
+$chart-a5: #F24E4E;
+/* chart palette 2 */
+$chart-b1: #0FC3E8;
+$chart-b2: #0194BE;
+$chart-b3: #E2D397;
+$chart-b4: #F07E13;
+$chart-b5: #481800;
+/* world-map */
+$map-1: #FED488;
+$map-2: #F9A960;
+$map-3: #EB675B;
+$map-4: #BEB894;
+$map-5: #E1DFBD;
+$map-6: #EDECE4;
+
+// Use Bootstrap defaults for other variables, imported here so we can access all app variables in one place when used
+// in components.
+@import "~bootstrap/scss/_functions";
+@import "~bootstrap/scss/_variables";

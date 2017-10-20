@@ -1,0 +1,17 @@
+{
+  "generator-ngx-rocket": {
+    "version": "2.2.1",
+    "props": {
+      "appName": "iata-fred",
+      "target": [
+        "web"
+      ],
+      "pwa": true,
+      "ui": "bootstrap",
+      "auth": true,
+      "projectName": "iata-fred",
+      "mobile": [],
+      "webview": []
+    }
+  }
+}

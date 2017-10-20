@@ -1,0 +1,43 @@
+{
+  "APP_NAME": "FRED+",
+  "About": "About",
+  "Home": "Home",
+  "Logged in as": "Logged in as",
+  "Login": "Login",
+  "Logout": "Logout",
+  "Password": "Password",
+  "Password is required": "Password is required",
+  "Username": "Username",
+  "Username is required": "Username is required",
+  "Username or password incorrect.": "Username or password incorrect.",
+  "Remember me": "Remember me",
+  "Version": "Version",
+  "globals": {
+    "ok": "Ok",
+    "cancel": "Cancel",
+    "back": "Back",
+    "dismiss": "Dismiss",
+    "map": "World Map"
+  },
+  "menu": {
+    "home": "Home",
+    "dashboards": "Dashboards",
+    "submission": "Submission Forms",
+    "requestAccess": "Request new access",
+    "about": "About FRED+",
+    "disclaimers": "Disclaimers",
+    "faq": "FAQ",
+    "contact": "Contact us"
+  },
+  "dashboard": {
+    "header": "Dashboard",
+    "headerPlural": "Dashboards",
+    "blindRanking": "Blind Ranking",
+    "blindRankingYear": "Blind Ranking over an year",
+    "performanceBenchmarks": "Performance Benchmarks",
+    "fuelEfficiency": "Fuel Efficiency",
+    "fuelEfficiencyYear": "Fuel Efficiency year on year",
+    "topDestinations": "Top N Destinations by Fuel consumption",
+    "countryMap": "Country Map"
+  }
+}
