@@ -2,12 +2,12 @@
 @import "../../theme/theme-variables";
 
 body {
-  background-color: $white;
+  background-color: $map-6;
 }
 
-#world {
+.container-fluid {
+  overflow: hidden;
   background-color: $map-6;
-  // border: 1px solid $map-4;
 }
 
 .background {
@@ -15,118 +15,69 @@ body {
   pointer-events: all;
 }
 
-.feature {
-  fill: $map-2;
-  cursor: pointer;
+#map-holder {
+  width: 100vw;
+  height: 85vh;
+  background-color: $map-6;
+  overflow: hidden;
 }
 
 .feature.active {
   fill: $map-3;
 }
 
-.mesh {
-  fill: none;
-  stroke: $map-4;
-  stroke-linecap: round;
-  stroke-linejoin: round;
+.tooltip {
+  display: inline-block;
+  margin: 1rem;
+  background-color: $map-5;
+  color: $black;
+  border-radius: 3px;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
+  .airline-selected {
+    background-color: $map-8;
+    color: $white;
+  }
+
+  .tooltip-header {
+    color: $gray-800;
+
+    &__country {
+      font-size: 1.3rem;
+    }
+    &__year {
+      font-size: 1.2rem;
+      background-color: $map-2;
+    }
+    &__title {
+      font-size: 1.1rem;
+      background-color: $map-1;
+    }
+  }
 }
 
-.names {
-  fill: none;
-  stroke: #fff;
-  stroke-linejoin: round;
-}
-// ******************
-#map-holder {
-  width: 100vw;
-  height: 100vh;
-}
 // svg rect {
-//   fill: #2A2C39;   /* map background colour */
+//   fill: #2A2C39;
 // }
 .country {
-  fill: #d0d0d0;   /* country colour */
-  stroke: #2A2C39; /* country border colour */
-  stroke-width: 1; /* country border width */
+  fill: $map-8;
+  stroke: $map-6; // same as map bg-color
+  stroke-width: 0.5;
 }
 .country-on {
-  fill: #4B5358;   /* highlight colour for selected country */
+  fill: $map-2;
 }
 .countryLabel {
-  display: block;   /* hide all country labels by default */
+  pointer-events: none;
+  cursor: pointer;
+  fill: $map-4;
+  display: none;   /* hide all country labels by default */
 }
 .countryName {
-  fill: #FFFAFF;   /* country label text colour */
+  fill: $map-3;
 }
 .countryLabelBg {
-  fill: #4B5358;   /* country label background colour */
+  fill: $map-4;
 }
-
-// ******************
-    /* Tooltip CSS */
-    .d3-tip {
-      line-height: 1.5;
-      font-weight: 400;
-      font-family:"avenir next", Arial, sans-serif;
-      padding: 6px;
-      background: rgba(0, 0, 0, 0.6);
-      color: #FFA500;
-      border-radius: 1px;
-      pointer-events: none;
-      }
-
-      /* Creates a small triangle extender for the tooltip */
-      .d3-tip:after {
-        box-sizing: border-box;
-        display: inline;
-        font-size: 8px;
-        width: 100%;
-        line-height: 1.5;
-        color: rgba(0, 0, 0, 0.6);
-        position: absolute;
-        pointer-events: none;
-
-      }
-
-      /* Northward tooltips */
-      .d3-tip.n:after {
-        content: "\25BC";
-        margin: -1px 0 0 0;
-        top: 100%;
-        left: 0;
-        text-align: center;
-      }
-
-      /* Eastward tooltips */
-      .d3-tip.e:after {
-        content: "\25C0";
-        margin: -4px 0 0 0;
-        top: 50%;
-        left: -8px;
-      }
-
-      /* Southward tooltips */
-      .d3-tip.s:after {
-        content: "\25B2";
-        margin: 0 0 1px 0;
-        top: -8px;
-        left: 0;
-        text-align: center;
-      }
-
-      /* Westward tooltips */
-      .d3-tip.w:after {
-        content: "\25B6";
-        margin: -4px 0 0 -1px;
-        top: 50%;
-        left: 100%;
-      }
-    .names {
-      fill: none;
-      stroke: #fff;
-      stroke-linejoin: round;
-    }
-    .details{
-      padding: 5px 10px;
-      color:white;
-    }

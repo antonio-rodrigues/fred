@@ -9,7 +9,6 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
 import { D3Service } from 'd3-ng2-service';
-import { ToolTipModule } from 'angular2-tooltip'
 
 import { CoreModule } from './core/core.module';
 import { SharedModule } from './shared/shared.module';
@@ -32,10 +31,11 @@ import { MapModule } from './map/map.module';
     AboutModule,
     LoginModule,
     MapModule,
-    AppRoutingModule,
-    ToolTipModule
+    AppRoutingModule
   ],
-  declarations: [AppComponent],
+  declarations: [
+    AppComponent
+  ],
   providers: [
     D3Service
   ],

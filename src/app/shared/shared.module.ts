@@ -14,4 +14,5 @@ import { LoaderComponent } from './loader/loader.component';
     LoaderComponent
   ]
 })
+
 export class SharedModule { }
