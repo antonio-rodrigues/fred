@@ -22,7 +22,10 @@ export const Themes = {
     color5: '#E1DFBD',
     color6: '#EDECE4',
     color7: '#0FC3E8',
-    color8: '#0194BE'
+    color8: '#0194BE',
+    color9: '#E5E5E5',
+    color10: '#E5E5E5',
+    color11: '#0194BE'
   },
   app: {
     white: '#fcfcfc',

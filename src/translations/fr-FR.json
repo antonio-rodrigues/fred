@@ -18,7 +18,14 @@
     "cancel": "Cancel",
     "back": "Back",
     "dismiss": "Dismiss",
-    "map": "World Map"
+    "home": "Home",
+    "submissionForm": "Formulaires de soumission",
+    "newAccess": "Demander un nouvel accès",
+    "about": "Sur FRED+",
+    "map": "Globe",
+    "disclaimers": "Avertissements",
+    "faq": "FAQ",
+    "contact": "Contact"
   },
   "menu": {
     "home": "Home",

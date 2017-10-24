@@ -11,6 +11,19 @@ $fa-font-path: "~font-awesome/fonts";
 // Override Bootstrap variables here to suite your theme.
 // Copy variables you want to customize from node_modules/bootstrap/scss/_variables.scss
 
+// Global website font
+@import url('https://fonts.googleapis.com/css?family=Abel');
+$font-family: 'Abel', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+
+/* latin */
+// @font-face {
+//   font-family: 'Abel';
+//   font-style: normal;
+//   font-weight: 400;
+//   src: local('Abel Regular'), local('Abel-Regular'), url(https://fonts.gstatic.com/s/abel/v8/UzN-iejR1VoXU2Oc-7LsbvesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+//   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+// }
+
 //
 //  Metrics
 //
@@ -79,6 +92,9 @@ $map-5: #E1DFBD;
 $map-6: #EDECE4;
 $map-7: #0FC3E8;
 $map-8: #0194BE;
+$map-9: #E5E5E5;
+$map-10: #E5E5E5;
+$map-11: #0194BE;
 
 // Use Bootstrap defaults for other variables, imported here so we can access all app variables in one place when used
 // in components.

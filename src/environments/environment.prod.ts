@@ -2,12 +2,15 @@
 import env from './.env.json';
 
 export const environment = {
+  fixtures: false,
   production: true,
   version: env.npm_package_version,
-  serverUrl: 'https://ad21d04d.ngrok.io/',
+  serverUrl: 'https://466979d1.ngrok.io',
   defaultLanguage: 'en-US',
   supportedLanguages: [
     'en-US',
     'fr-FR'
-  ]
+  ],
+  country: 'United Kingdom',
+  company: 'British Airways'
 };

@@ -12,6 +12,8 @@ import { AuthenticationGuard } from './authentication/authentication.guard';
 import { I18nService } from './i18n.service';
 import { HttpService } from './http/http.service';
 import { HttpCacheService } from './http/http-cache.service';
+// import { HTTP_INTERCEPTORS } from '@angular/common/http';
+// import { TokenInterceptor } from './http/token.interceptor';
 
 export function createHttpService(backend: ConnectionBackend,
                                   defaultOptions: RequestOptions,
@@ -41,6 +43,11 @@ export function createHttpService(backend: ConnectionBackend,
       deps: [XHRBackend, RequestOptions, HttpCacheService],
       useFactory: createHttpService
     }
+    // {
+    //   provide: HTTP_INTERCEPTORS,
+    //   useClass: TokenInterceptor,
+    //   multi: true
+    // }
   ]
 })
 export class CoreModule {
