@@ -17,7 +17,14 @@
     "cancel": "Cancel",
     "back": "Back",
     "dismiss": "Dismiss",
-    "map": "World Map"
+    "home": "Home",
+    "submissionForm": "Submission forms",
+    "newAccess": "Request new access",
+    "about": "About FRED+",
+    "map": "World Map",
+    "disclaimers": "Disclaimers",
+    "faq": "FAQ",
+    "contact": "Contact"
   },
   "menu": {
     "home": "Home",

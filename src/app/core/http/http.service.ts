@@ -41,8 +41,9 @@ export class HttpService extends Http {
       url = request;
       request = environment.serverUrl + url;
     } else {
-      url = request.url;
-      request.url = environment.serverUrl + url;
+      url = options.url ? options.url : request.url;
+      request.url = url;
+      // request.url = environment.serverUrl + url;
     }
 
     if (!options.cache) {

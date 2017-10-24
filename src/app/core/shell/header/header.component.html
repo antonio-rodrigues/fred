@@ -7,9 +7,17 @@
     </button>
     <div id="navbar-menu" class="collapse navbar-collapse float-xs-none" [ngbCollapse]="menuHidden">
       <div class="navbar-nav">
-        <a class="nav-item nav-link text-uppercase" routerLink="/home" routerLinkActive="active">
+        <!-- <a class="nav-item nav-link text-uppercase" routerLink="/home" routerLinkActive="active">
           <i class="fa fa-home"></i>
-          <span translate>Home</span>
+          <span translate>APP_NAME</span>
+        </a> -->
+        <a class="nav-item nav-link text-uppercase" routerLink="/new-access" routerLinkActive="active">
+          <i class="fa fa-key"></i>
+          <span translate>globals.newAccess</span>
+        </a>
+        <a class="nav-item nav-link text-uppercase" routerLink="/submission" routerLinkActive="active">
+          <i class="fa fa-form"></i>
+          <span translate>globals.submissionForm</span>
         </a>
         <a class="nav-item nav-link text-uppercase" routerLink="/map" routerLinkActive="active">
           <i class="fa fa-globe"></i>
@@ -17,7 +25,19 @@
         </a>
         <a class="nav-item nav-link text-uppercase" routerLink="/about" routerLinkActive="active">
           <i class="fa fa-question-circle"></i>
-          <span translate>About</span>
+          <span translate>globals.about</span>
+        </a>
+        <a class="nav-item nav-link text-uppercase" routerLink="/disclaimers" routerLinkActive="active">
+          <i class="fa fa-question-circle"></i>
+          <span translate>globals.disclaimers</span>
+        </a>
+        <a class="nav-item nav-link text-uppercase" routerLink="/faq" routerLinkActive="active">
+          <i class="fa fa-question-circle"></i>
+          <span translate>globals.faq</span>
+        </a>
+        <a class="nav-item nav-link text-uppercase" routerLink="/contact" routerLinkActive="active">
+          <i class="fa fa-question-circle"></i>
+          <span translate>globals.contact</span>
         </a>
       </div>
       <div class="navbar-nav ml-auto">

@@ -2,12 +2,12 @@
 @import "../../theme/theme-variables";
 
 body {
-  background-color: $map-6;
+  background-color: $white;
 }
 
 .container-fluid {
   overflow: hidden;
-  background-color: $map-6;
+  background-color: $white;
 }
 
 .background {
@@ -18,12 +18,12 @@ body {
 #map-holder {
   width: 100vw;
   height: 85vh;
-  background-color: $map-6;
+  background-color: $white;
   overflow: hidden;
 }
 
 .feature.active {
-  fill: $map-3;
+  fill: $map-11;
 }
 
 .tooltip {
@@ -31,6 +31,7 @@ body {
   margin: 1rem;
   background-color: $map-5;
   color: $black;
+  font-family: $font-family;
   border-radius: 3px;
   border-radius: 2px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
@@ -52,9 +53,16 @@ body {
       background-color: $map-2;
     }
     &__title {
+      &:first-child() {
+        min-width: 120px;
+        white-space: nowrap;
+      }
       font-size: 1.1rem;
       background-color: $map-1;
     }
+  }
+  .no-wrap {
+    white-space: nowrap;
   }
 }
 
@@ -62,17 +70,24 @@ body {
 //   fill: #2A2C39;
 // }
 .country {
-  fill: $map-8;
-  stroke: $map-6; // same as map bg-color
+  fill: $map-10;
+  stroke: $white;
   stroke-width: 0.5;
 }
 .country-on {
-  fill: $map-2;
+  fill: $map-11;
+  &__origin {
+    fill: $gray-900; // $black
+  }
+}
+.country-selectable {
+  fill: $map-11;
 }
 .countryLabel {
   pointer-events: none;
   cursor: pointer;
   fill: $map-4;
+  font-family: $font-family;
   display: none;   /* hide all country labels by default */
 }
 .countryName {
